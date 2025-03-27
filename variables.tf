@@ -91,3 +91,49 @@ variable "multi_az_deployment" {
   type        = bool
   
 }
+
+# acm variable
+variable "domain_name" {
+  description = "domain name"
+  type        = string
+  
+}
+
+variable "alternative_name" {
+  description = "sub domain name"
+  type        = string
+  
+}
+
+#s3 varialbes
+variable "env_file_bucket_name" {
+  description = "s3 bucket name"
+  type        = string
+  
+}
+
+variable "env_file_name" {
+  description = "env file name"
+  type        = string
+  
+}
+
+# ecs variables
+variable "architecture" {
+  description = "ecs cpu architecture"
+  type        = string
+  
+}
+
+variable "container_image" {
+  description = "container image uri"
+  type        = string
+  
+}
+
+# route 53 variables
+variable "record_name" {
+  description = "sub domain name"
+  type        = string
+  
+}
