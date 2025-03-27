@@ -66,3 +66,28 @@ variable "ssh_location" {
   type        = string
   
 }
+
+# rds variables
+variable "database_snapshot_identifier" {
+  description = "database snapshot name"
+  type        = string
+  
+}
+
+variable "database_instance_class" {
+  description = "data base instance type"
+  type        = string
+  
+}
+
+variable "database_instance_identifier" {
+  description = "data base instance identifier"
+  type        = string
+  
+}
+
+variable "multi_az_deployment" {
+  description = "create a standby db instance"
+  type        = bool
+  
+}
